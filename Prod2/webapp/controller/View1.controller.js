@@ -17,7 +17,7 @@ sap.ui.define([
             },
     	    funcListItemPress: function (evt) {
 				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-				var selectedIdProd = evt.getSource().getBindingContext().getProperty("ProductID");
+				var selectedIdProd = evt.getSource().getBindingContext().getProperty("ProductID") ;
 				oRouter.navTo("Detalhes", {
 					idProd: selectedIdProd
                 });
