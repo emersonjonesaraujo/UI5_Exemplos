@@ -12,7 +12,8 @@
 					                    <Text text="{ProductID}" id="text3"/>
 					                    <Text text="{ProductName}" id="text4"/>
 					                    <Text xmlns="sap.m" text="{parts: [{path:'UnitPrice'},''], type:'sap.ui.model.type.Currency', formatOptions:{showMeasure: false}}" id="text8"/>
-					                    <Text xmlns="sap.m" text="{UnitsInStock}" id="text9"/></cells>
+					                    <Text xmlns="sap.m" text="{UnitsInStock}" id="text9"/>
+                                        <DatePicker id="idData_5" value="20210701"  displayFormat="dd.MM.yyyy" width="150px" enabled="false"/></cells>
 					            </ColumnListItem>
 					        </items>
 					       <columns>
@@ -40,7 +41,10 @@
 					                <header>
 					                    <Text text="Estoque" id="text7"/>
 					                </header>
-					            </Column></columns> 
+					            </Column>
+                                <Column id="column5">
+                                    <Text text="Data" id="text10"/>
+                                </Column></columns> 
 					        <headerToolbar>
 					            <Toolbar width="100%" id="toolbar1">
 					                <content>

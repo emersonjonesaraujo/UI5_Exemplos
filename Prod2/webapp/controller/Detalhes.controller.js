@@ -9,7 +9,7 @@ sap.ui.define([
 
 		return Controller.extend("ns.Prod2.controller.Detalhes", {
 			onInit: function () {
-                this._oRout = this.getOwnerComponent().getRouter();
+                this._oRout = this.getOwnerComponent().getRouter(); 
                 var oRouter =  sap.ui.core.UIComponent.getRouterFor(this);
                 oRouter.getRoute("Detalhes").attachMatched(this._onRoute, this); 
                 
@@ -46,7 +46,7 @@ sap.ui.define([
         } ,
 
        openOrdemInfo: function(oEvent){
-            var t = this.getView(); 
+            var t = this.getView();   
             if(!this._oDialog){
                 this._oDialog = sap.ui.xmlfragment("ns.Prod2.view.OrdemInfo",this);
                 this.getView().addDependent(this._oDialog);
@@ -55,7 +55,7 @@ sap.ui.define([
             var oOrder = oEvent.getSource().getBindingContext().getObject().OrderID; 
             var oProduto = oEvent.getSource().getBindingContext().getObject().ProductID; 
             
-            var sURL = "/Order_Details(OrderID=" + oOrder + ",ProductID=" + oProduto + ")"; 
+            var sURL = "/Order_Details(OrderID=" + oOrder + ",ProductID=" + oProduto + ")";  
             
             var oForm = sap.ui.getCore().byId("sfInfo") 
             

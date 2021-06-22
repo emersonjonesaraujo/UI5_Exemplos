@@ -10,6 +10,9 @@
                     <Text text="{Order/ShipName}"/>
                     <Label text="Nome Endereço" design="Bold"/>
                     <Text text="{Order/ShipAddress}"/>
+                    <Label text="Data da Ordem" design="Bold"/>
+                        <DatePicker dateValue="{Order/OrderDate}" displayFormat="dd.MM.yyyy" enabled="false"></DatePicker>
+                    
                     <Label text="Status" design="Bold"/>
                     <ObjectStatus text="{= ${Order/ShipVia} === 1 ? 'Enviado' : ${Order/ShipVia} === 2 ? 'Processando' : 'Entregue'}" state="{= ${Order/ShipVia} === 1 ? 'Error' : ${Order/ShipVia} === 2 ? 'Warning' : 'Success'}"/>
                 </f:content>
