@@ -21,7 +21,7 @@
 				                        <sap.ui.layout.form:content>
 				                            <Label text="Empresa" id="labe30"/>
 				                            <Text xmlns="sap.m" text="{CompanyName}" id="text31"/>
-				                            <Label text="Contato " width="100%" id="label32"/>
+				                            <Label text="Contatos" width="100%" id="label32"/>
 				                            <Text xmlns="sap.m" text="{ContactName}" id="text34"/>
 				                            <Label text="Celular" width="100%" id="label33"/>
 				                            <Text xmlns="sap.m" text="{Phone}" id="text35"/>
